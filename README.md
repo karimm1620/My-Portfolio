@@ -1,9 +1,11 @@
-# My-Portfolio — Interactive Developer Portfolio Website
+# Eclipse-Portfolio — Interactive Developer Portfolio Website
 
-**My-Portfolio** is a modern and interactive personal portfolio website designed to showcase projects, skills, and achievements in a visually appealing way. Built with cutting-edge tools for smooth animations, clean design, and a delightful user experience.
+**Eclipse-Portfolio** is a modern and interactive personal portfolio website designed to showcase projects, skills, and achievements in a visually appealing way. Built with cutting-edge tools for smooth animations, clean design, and a delightful user experience.
 
 ### 🌐 Live Demo
 [Check it out here → ](https://my-portfolio-phi-ten-48.vercel.app/)
+
+<img src="project3.png" alt="">
 
 ---
 
