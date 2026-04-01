@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import homeData from "../data/homeData.jsx";
-import Tippy from '@tippyjs/react';
-import Swal from 'sweetalert2';
+import Tippy from "@tippyjs/react";
+import Swal from "sweetalert2";
 
 const Home = () => {
   const [currentText, setCurrentText] = useState("");
@@ -47,21 +47,32 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-white dark:bg-gray-800 pt-20 overflow-hidden" data-aos-duration="1000" data-aos="fade-down"
+      className="min-h-screen bg-white dark:bg-gray-800 pt-20 overflow-hidden"
+      data-aos-duration="1000"
+      data-aos="fade-down"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-5rem)] py-12">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white" data-aos-dely="600" data-aos="fade-down">
+              <h1
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white"
+                data-aos-dely="600"
+                data-aos="fade-down"
+              >
                 {homeData.title}
               </h1>
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-white flex items-center" data-aos-delay="600" data-aos="fade-right">
+              <h2
+                className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-white flex items-center"
+                data-aos-delay="600"
+                data-aos="fade-right"
+              >
                 <span className="typing-text">
                   {currentText}
                   <span
-                    className={`cursor ${showCursor ? "opacity-100" : "opacity-0"
-                      } transition-all duration-200`}
+                    className={`cursor ${
+                      showCursor ? "opacity-100" : "opacity-0"
+                    } transition-all duration-200`}
                   >
                     |
                   </span>
@@ -69,12 +80,19 @@ const Home = () => {
               </h2>
             </div>
 
-
-            <p className="text-lg text-gray-800 dark:text-white leading-relaxed max-w-lg" data-aos-delay="600" data-aos="fade-left">
+            <p
+              className="text-lg text-gray-800 dark:text-white leading-relaxed max-w-lg"
+              data-aos-delay="600"
+              data-aos="fade-left"
+            >
               {homeData.description}
             </p>
 
-            <div className="flex items-center space-x-4" data-aos-delay="600" data-aos="fade-down">
+            <div
+              className="flex items-center space-x-4"
+              data-aos-delay="600"
+              data-aos="fade-down"
+            >
               <span className="text-gray-800 dark:text-white font-medium">
                 Follow me on:
               </span>
@@ -93,24 +111,29 @@ const Home = () => {
                   </Tippy>
                 ))}
               </div>
-
             </div>
 
-
-            <div className="flex flex-col sm:flex-row gap-4" data-aos-delay="600" data-aos="fade-down">
+            <div
+              className="flex flex-col sm:flex-row gap-4"
+              data-aos-delay="600"
+              data-aos="fade-down"
+            >
               {homeData.buttons.map((btn, index) => (
                 <Tippy content={btn.label} key={index} placement="top">
                   {btn.href && btn.href !== "#" ? (
                     <a
                       href={btn.href}
-                      className={`inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 ${btn.type === "primary"
-                        ? "bg-gray-800 dark:bg-white text-white dark:text-gray-800 hover:bg-gray-800 dark:hover:bg-gray-100"
-                        : "border-2 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
-                        }`}
+                      className={`inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 ${
+                        btn.type === "primary"
+                          ? "bg-gray-800 dark:bg-white text-white dark:text-gray-800 hover:bg-gray-800 dark:hover:bg-gray-100"
+                          : "border-2 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
+                      }`}
                       target={btn.href.startsWith("http") ? "_blank" : "_self"}
                       rel="noopener noreferrer"
                     >
-                      <i className={`bx ${btn.type === "primary" ? "bx-download" : "bx-envelope"} mr-2`} />
+                      <i
+                        className={`bx ${btn.type === "primary" ? "bx-download" : "bx-envelope"} mr-2`}
+                      />
                       {btn.label}
                     </a>
                   ) : (
@@ -124,23 +147,23 @@ const Home = () => {
                           confirmButtonText: "Alright",
                         })
                       }
-                      className={`inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 ${btn.type === "primary"
-                        ? "bg-gray-800 dark:bg-white text-white dark:text-gray-800 hover:bg-gray-800 dark:hover:bg-gray-100"
-                        : "border-2 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
-                        }`}
+                      className={`inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 ${
+                        btn.type === "primary"
+                          ? "bg-gray-800 dark:bg-white text-white dark:text-gray-800 hover:bg-gray-800 dark:hover:bg-gray-100"
+                          : "border-2 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
+                      }`}
                       aria-label={btn.label}
                     >
-                      <i className={`bx ${btn.type === "primary" ? "bx-download" : "bx-envelope"} mr-2`} />
+                      <i
+                        className={`bx ${btn.type === "primary" ? "bx-download" : "bx-envelope"} mr-2`}
+                      />
                       {btn.label}
                     </button>
                   )}
                 </Tippy>
-
               ))}
-
             </div>
 
-       
             {/* Quick Stats Heading */}
             <h4 className="flex items-center gap-2 text-lg font-semibold mb-4 text-gray-800 dark:text-white">
               <i className="bx bx-bar-chart-alt text-base" />
@@ -162,17 +185,23 @@ const Home = () => {
                     <i className={item.icon}></i>
                   </div>
                   <div>
-                    <p className="font-bold text-white dark:text-gray-800">{item.value}</p>
-                    <p className="text-xs text-white dark:text-gray-800">{item.label}</p>
+                    <p className="font-bold text-white dark:text-gray-800">
+                      {item.value}
+                    </p>
+                    <p className="text-xs text-white dark:text-gray-800">
+                      {item.label}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
-
           </div>
 
-
-          <div className="relative flex justify-center items-center" data-aos-delay="600" data-aos="fade-up">
+          <div
+            className="relative flex justify-center items-center"
+            data-aos-delay="600"
+            data-aos="fade-up"
+          >
             <div className="relative z-10">
               <img
                 src={homeData.img}
@@ -197,8 +226,9 @@ const Home = () => {
                   delay={[0, 0]}
                 >
                   <div
-                    className={`absolute ${positions[index % positions.length]
-                      } w-12 h-12 sm:w-16 sm:h-16 bg-gray-800 text-white dark:bg-white dark:text-gray-800 dark:border  rounded-full drop-shadow-2xl shadow-lg dark:shadow-gray-800 flex items-center justify-center hover:scale-110 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-float cursor-pointer`}
+                    className={`absolute ${
+                      positions[index % positions.length]
+                    } w-12 h-12 sm:w-16 sm:h-16 bg-gray-800 text-white dark:bg-white dark:text-gray-800 dark:border  rounded-full drop-shadow-2xl shadow-lg dark:shadow-gray-800 flex items-center justify-center hover:scale-110 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-float cursor-pointer`}
                     style={{
                       animationDelay: `${index * 0.5}s`,
                     }}
@@ -208,8 +238,6 @@ const Home = () => {
                 </Tippy>
               );
             })}
-
-
           </div>
         </div>
 

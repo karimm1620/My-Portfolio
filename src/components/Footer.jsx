@@ -1,6 +1,6 @@
 import footerData from "../data/footerData.jsx";
-import Tippy from '@tippyjs/react';
-import Swal from 'sweetalert2'
+import Tippy from "@tippyjs/react";
+import Swal from "sweetalert2";
 
 const Footer = () => {
   return (
@@ -9,7 +9,9 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h3 className="flex items-center text-2xl font-bold mb-2 gap-2">
-            <i className={`${footerData.brand.icon} text-gray-800 dark:text-white text-xl`}></i>
+            <i
+              className={`${footerData.brand.icon} text-gray-800 dark:text-white text-xl`}
+            ></i>
             {footerData.brand.name}
           </h3>
           <p className="text-sm text-gray-800 dark:text-white">
@@ -26,7 +28,10 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 text-sm">
             {footerData.navigation.map((item, index) => (
               <li key={index}>
-                <a href={item.href} className="hover:text-blue-600 dark:hover:text-blue-400 transition">
+                <a
+                  href={item.href}
+                  className="hover:text-blue-600 dark:hover:text-blue-400 transition"
+                >
                   {item.label}
                 </a>
               </li>
@@ -94,12 +99,8 @@ const Footer = () => {
                 <i className="bx bx-send text-[1.2rem] translate-y-[1px]" />
               </button>
             </Tippy>
-
-
           </form>
         </div>
-
-
       </div>
 
       {/* Divider */}
@@ -120,13 +121,9 @@ const Footer = () => {
           ))}
         </div>
 
-
         {/* Copyright */}
-        <div className="text-center md:text-right">
-          {footerData.copyright}
-        </div>
+        <div className="text-center md:text-right">{footerData.copyright}</div>
       </div>
-
     </footer>
   );
 };
