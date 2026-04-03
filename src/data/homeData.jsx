@@ -25,7 +25,7 @@ const homeData = {
   ],
   floatingIcons: [
     { icon: "bx bxl-javascript", color: "#e34c26", label: "JavaScript" },
-    { icon: "bx bxl-tailwind-css", color: "#264de4", label: "CSS" },
+    { icon: "bx bxl-tailwind-css", color: "#264de4", label: "Tailwind CSS" },
     { icon: "bx bxl-typescript", color: "#f0db4f", label: "TypeScript" },
     { icon: "bx bxl-react", color: "#61dbfb", label: "React" },
   ],
@@ -60,7 +60,7 @@ const homeData = {
     },
     {
       label: "Total Projects",
-      value: "8 Projects",
+      value: "19 Projects",
       icon: "bx bx-code-alt",
     },
     // {
