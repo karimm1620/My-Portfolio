@@ -19,7 +19,7 @@ const homeData = {
     },
     {
       label: "Download My CV",
-      href: "https://drive.google.com/uc?export=download&id=1P7meJDV-GWyK-K1LCYLwNwRGTBNRhlLq",
+      href: "https://drive.google.com/uc?export=download&id=1ddrLAu7tP8M_yLzNpnqZt5ffjtWjuCHh",
       type: "secondary",
     },
   ],
