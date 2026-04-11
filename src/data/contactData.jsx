@@ -13,11 +13,6 @@ const contactData = {
       value: "social",
       icon: "bx bx-link",
     },
-    // {
-    //     label: "Support Me",
-    //     value: "support",
-    //     icon: "bx bx-heart",
-    // },
   ],
 
   socials: [
@@ -27,12 +22,12 @@ const contactData = {
       icon: "bx bxl-github",
       description: "Explore my code & projects",
     },
-    // {
-    //     label: "LinkedIn",
-    //     href: "https://www.linkedin.com/in/",
-    //     icon: "bx bxl-linkedin-square",
-    //     description: "Let’s connect professionally",
-    // },
+    {
+        label: "LinkedIn",
+        href: "www.linkedin.com/in/abdul-karim-sulaeman-186714402",
+        icon: "bx bxl-linkedin-square",
+        description: "Let’s connect professionally",
+    },
     {
       label: "Instagram",
       href: "https://www.instagram.com/rimmzz__",
@@ -46,15 +41,6 @@ const contactData = {
       description: "Random thoughts & dev tiktok",
     },
   ],
-
-  // supportPlatforms: [
-  //     {
-  //         label: "QRIS",
-  //         type: "image",
-  //         imageSrc: "/assets/qris.jpg",
-  //         alt: "Scan to support via QRIS",
-  //     }
-  // ],
 };
 
 export default contactData;
