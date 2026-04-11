@@ -24,7 +24,7 @@ const contactData = {
     },
     {
         label: "LinkedIn",
-        href: "www.linkedin.com/in/abdul-karim-sulaeman-186714402",
+        href: "https://www.linkedin.com/in/abdul-karim-sulaeman",
         icon: "bx bxl-linkedin-square",
         description: "Let’s connect professionally",
     },
